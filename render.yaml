@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: simple-book-api
+    env: node
+    repo: https://github.com/samailatech/simple-book-api
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
